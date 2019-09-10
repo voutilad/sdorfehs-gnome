@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=I3 + GNOME
+Name=SDORFEHS + GNOME
 Comment=This session logs you into sdorfehs with GNOME session integration
 Exec=gnome-session-sdorfehs
 TryExec=sdorfehs-gnome
