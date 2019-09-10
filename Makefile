@@ -6,11 +6,11 @@ INSTALL = install
 DESTDIR ?= /
 PREFIX  ?= $(DESTDIR)/usr
 
-PATH_I3_GNOME = $(PREFIX)/bin/i3-gnome
-PATH_I3_GNOME_DESKTOP = $(PREFIX)/share/applications/i3-gnome.desktop
-PATH_I3_GNOME_SESSION = $(PREFIX)/share/gnome-session/sessions/i3-gnome.session
-PATH_I3_GNOME_XSESSION = $(PREFIX)/share/xsessions/i3-gnome.desktop
-PATH_GNOME_SESSION_I3 = $(PREFIX)/bin/gnome-session-i3
+PATH_I3_GNOME = $(PREFIX)/bin/sdorfehs-gnome
+PATH_I3_GNOME_DESKTOP = $(PREFIX)/share/applications/sdorfehs-gnome.desktop
+PATH_I3_GNOME_SESSION = $(PREFIX)/share/gnome-session/sessions/sdorfehs-gnome.session
+PATH_I3_GNOME_XSESSION = $(PREFIX)/share/xsessions/sdorfehs-gnome.desktop
+PATH_GNOME_SESSION_I3 = $(PREFIX)/bin/gnome-session-sdorfehs
 
 #
 # Targets
@@ -21,11 +21,11 @@ all:
 
 
 install:
-	$(INSTALL) -m0644 -D session/i3-gnome-xsession.desktop $(PATH_I3_GNOME_XSESSION)
-	$(INSTALL) -m0644 -D session/i3-gnome.desktop $(PATH_I3_GNOME_DESKTOP)
-	$(INSTALL) -m0644 -D session/i3-gnome.session $(PATH_I3_GNOME_SESSION)
-	$(INSTALL) -m0755 -D session/i3-gnome $(PATH_I3_GNOME)
-	$(INSTALL) -m0755 -D session/gnome-session-i3 $(PATH_GNOME_SESSION_I3)
+	$(INSTALL) -m0644 -D session/sdorfehs-gnome-xsession.desktop $(PATH_I3_GNOME_XSESSION)
+	$(INSTALL) -m0644 -D session/sdorfehs-gnome.desktop $(PATH_I3_GNOME_DESKTOP)
+	$(INSTALL) -m0644 -D session/sdorfehs-gnome.session $(PATH_I3_GNOME_SESSION)
+	$(INSTALL) -m0755 -D session/sdorfehs-gnome $(PATH_I3_GNOME)
+	$(INSTALL) -m0755 -D session/gnome-session-sdorfehs $(PATH_GNOME_SESSION_I3)
 
 
 
